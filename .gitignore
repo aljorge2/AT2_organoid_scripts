@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+*.rds
+*.bam
+*.h5
+*.hdf5
+.DS_Store
