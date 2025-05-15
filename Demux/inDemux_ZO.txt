@@ -1,0 +1,3 @@
+/tscc/projects/ps-epigen/10x_output/250311/counts_out/snRNA/JB_1495/outs/ JB_1495
+/tscc/projects/ps-epigen/10x_output/250311/counts_out/snRNA/JB_1496/outs/ JB_1496
+/tscc/projects/ps-epigen/10x_output/250214_IGM/counts_out/snRNA/JB_1466_1_2/outs/ JB_1466_1_2
