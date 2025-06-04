@@ -34,7 +34,7 @@ SEU_OBJ="/tscc/projects/ps-epigen/users/a2jorgensen/AT2_organoid/data/SCT/250507
 IDENT="seurat_clusters"
 
 # output path
-OUT_PATH="/tscc/projects/ps-epigen/users/a2jorgensen/AT2_organoid/data/Quality/250528_genelist"
+OUT_PATH="/tscc/projects/ps-epigen/users/a2jorgensen/AT2_organoid/data/Quality/250528_genelist_all/"
 
 # condition to group by for ucell
 CONDITION="orig.ident"
@@ -53,6 +53,6 @@ UMAP="umap"
 #scDP='/projects/ps-epigen/users/cmiciano/Liver/RNA/scripts/subclustering/clust_dotplot.R'
 #Rscript $scDP -sobj $SEU_OBJ -o $OUT_PATH -n $NAME -i $IDENT 
 KM_Report='/tscc/projects/ps-epigen/users/a2jorgensen/BpdProject/scripts/run_knowmark.R'
-Rscript $KM_Report -glp $GENE_LIST_PATH -pat $PATTERN -sobj $SEU_OBJ -i $IDENT -c $CONDITION -co $COND_ORD -o $OUT_PATH -org $TISSUE_ORG -u $UMAP
-#Rscript $KM_Report -glp $GENE_LIST_PATH -sobj $SEU_OBJ -i $IDENT -c $CONDITION -co $COND_ORD -o $OUT_PATH -org $TISSUE_ORG -u $UMAP
+#Rscript $KM_Report -glp $GENE_LIST_PATH -pat $PATTERN -sobj $SEU_OBJ -i $IDENT -c $CONDITION -co $COND_ORD -o $OUT_PATH -org $TISSUE_ORG -u $UMAP
+Rscript $KM_Report -glp $GENE_LIST_PATH -sobj $SEU_OBJ -i $IDENT -c $CONDITION -co $COND_ORD -o $OUT_PATH -org $TISSUE_ORG -u $UMAP
 
